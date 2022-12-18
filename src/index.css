@@ -1,13 +1,131 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
+  color: #2B283A;
+  width: 100vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F55A5A;
+  color: #fff;
+  height: 55px;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.nav--title {
+  margin-left: .5em;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+
+/* CARD COMPONENT */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin: 1em 0 2em;
+}
+
+.card--image-container {
+  width: 90vw;
+  height: 120px;
+}
+
+.card--image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.card--info-container {
+  width: 90vw;
+}
+
+.card--info-top {
+  display: flex;
+  align-items: center;
+}
+
+.pin {
+  width: 18px;
+}
+
+.card--info-location {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 1.5em 0 .3em;
+}
+
+.card--info-link {
+  color: #918E9B;
+  font-weight: 500;
+}
+
+.card--info-title {
+  font-size: 1.6rem;
+  margin: .3em 0 0;
+}
+
+.card--info-date {
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+.card--info-description {
+  margin: 0;
+}
+
+
+@media (min-width: 650px) {
+  .card {
+    flex-direction: row;
+  }
+  
+  .card--image-container {
+    width: 20vw;
+    height: 250px;
+  }
+
+  .card--info-container {
+    max-width: 70vw;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  nav {
+    height: 100px;
+  }
+  nav img {
+    width: 40px;
+  }
+  .nav--title {
+    font-size: 2rem;
+  }
+  .card--info-title {
+    font-size: 2rem;
+  }
+
+  .card--info-date {
+    font-size: 1rem;
+  }
+
+  .card--info-description {
+    font-size: 1rem;
+  }
 }
