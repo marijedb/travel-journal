@@ -5,3 +5,5 @@ Images from unsplash
 Locations pinned from Google maps. 
 Design based on design made by Scrimba team. 
 This was a solo project from their React module
+
+marijedb.github.io/travel-journal/
